@@ -29,3 +29,14 @@ const mixObject = {...newLog, ...oldLog} //spread operator we can also use Objec
 
 // console.log(Object.keys(mixObject));
 // console.log(Object.values(mixObject)); //fetching all keys and values from Objects
+
+const myCources = {
+    cName: "JavaScript",
+    cPrice: '9999/-',
+    cInstructor: "Hitesh"
+}
+
+const {cInstructor: ins} = myCources // Destructuring of the Objects in JavaScript
+//Used in API calls 
+
+console.log(ins);
