@@ -23,7 +23,7 @@ function addOne(num) {
 }
 
 
-console.log(addTwo);
+console.log(addTwo); // cannot be accessed before initializing in this case but working in the previous case
 const addTwo = function(num){
     return num + 2
 }
