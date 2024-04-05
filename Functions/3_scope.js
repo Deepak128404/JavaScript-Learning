@@ -4,5 +4,26 @@ if(true){
     var outsideAvilable = "i'm outside also" //since this variable is available outside it's scope which could lead multiple problems we avoid using var
 }
 
-console.log(outsideAvilable);
-console.log(second);
+// console.log(outsideAvilable);
+// console.log(second);
+
+if(true){
+    const username = 'Deepak'
+    if(username=="Deepak"){
+        console.log(`hello ${username}`)//username can be accessed inside this function scope
+        const username2 = 'function';
+        console.log(username2);
+    }
+    // console.log(username2); //since it's outside it's scope it cannot be accesssed 
+}
+
+console.log(addOne(9));
+function addOne(num) {
+    return num + 1;
+}
+
+
+console.log(addTwo);
+const addTwo = function(num){
+    return num + 2
+}
